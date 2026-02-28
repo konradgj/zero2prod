@@ -3,8 +3,8 @@ use serde::Deserialize;
 
 #[derive(Deserialize)]
 pub struct UserForm {
-    email: String,
-    name: String,
+    _email: String,
+    _name: String,
 }
 
 pub async fn subscribe(_form: web::Form<UserForm>) -> HttpResponse {
