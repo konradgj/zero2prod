@@ -16,6 +16,10 @@ chrono = { version = "0.4.44", default-features = false, features = ["clock"] }
 config = "0.15.19"
 serde = { version = "1.0.228", features = ["derive"] }
 tokio = { version = "1", features = ["macros", "rt-multi-thread"] }
+tracing = { version = "0.1.44", features = ["log"] }
+tracing-bunyan-formatter = "0.3.10"
+tracing-log = "0.2.0"
+tracing-subscriber = { version = "0.3.22", features = ["env-filter", "registry"] }
 uuid = { version = "1.21.0", features = ["v4"] }
 
 [dependencies.sqlx]
